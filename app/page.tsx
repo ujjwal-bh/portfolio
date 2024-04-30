@@ -1,95 +1,80 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import SectionTitle from "@/components/SectionTitle";
+import ServiceCard from "@/components/ServiceCard";
+import { data } from "@/utils/data";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <article className="about" data-page="about">
+      <SectionTitle>About</SectionTitle>
+
+      <section className="about-text">
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
+         {data.description1}
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+
+        <p>
+         {data.description2}
+        </p>
+      </section>
+
+      <section className="service">
+        <h3 className="h3 service-title">What i'm doing</h3>
+
+        <div className="service-list">
+          {data.services.map((item, index)=> {
+            const {Icon, description, title} = item;
+            return <ServiceCard key={index} Icon={Icon} title={title} description={description}/>
+          })}
+
+          {/* <div className="service-item">
+
+          <div className="service-icon-box">
+            <Image src="/images/icon-dev.svg" alt="Web development icon" width="40" height={40} />
+          </div>
+
+          <div className="service-content-box">
+            <h4 className="h4 service-item-title">Web development</h4>
+
+            <p className="service-item-text">
+              High-quality development of sites at the professional level.
+            </p>
+          </div>
+
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <div className="service-item">
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+          <div className="service-icon-box">
+            <Image src="/images/icon-app.svg" alt="mobile app icon" width="40" height={40} />
+          </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+          <div className="service-content-box">
+            <h4 className="h4 service-item-title">Mobile apps</h4>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+            <p className="service-item-text">
+              Professional development of applications for iOS and Android.
+            </p>
+          </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        </div>
+
+        <div className="service-item">
+
+          <div className="service-icon-box">
+            <Image src="/images/icon-photo.svg" alt="camera icon" width="40" height={40} />
+          </div>
+
+          <div className="service-content-box">
+            <h4 className="h4 service-item-title">Photography</h4>
+
+            <p className="service-item-text">
+              I make high-quality photos of any category at a professional level.
+            </p>
+          </div>
+
+        </div> */}
+        </div>
+      </section>
+    </article>
   );
 }
