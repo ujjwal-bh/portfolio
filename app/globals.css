@@ -831,7 +831,8 @@ main {
 .project-category {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-500);
+
 }
 
 /* individual project */
@@ -840,7 +841,7 @@ main {
 }
 .project-description {
   text-align: justify;
-  color: var(--light-gray);
+  color: var(--light-gray-70);
   font-size: var(--fs-5);
   line-height: 1.5;
   padding: 0.5rem;
@@ -1070,7 +1071,10 @@ textarea.form-input::-webkit-resizer {
 .form-btn:disabled:hover::before {
   background: var(--bg-gradient-jet);
 }
-
+.timeline-title{
+  color: var(--light-gray);
+  margin-bottom: 0.5rem;
+}
 /* RESPONSIVE */
 @media (min-width: 450px) {
   /* CLIENT */
@@ -1243,10 +1247,7 @@ textarea.form-input::-webkit-resizer {
     width: 8px;
     left: -43px;
   }
-  .timeline-title{
-    color: var(--light-gray);
-    margin-bottom: 0.5rem;
-  }
+
 
   .skills-item:not(:last-child) {
     margin-bottom: 25px;

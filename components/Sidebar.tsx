@@ -1,12 +1,14 @@
+"use client"
 import { data } from '@/utils/data'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { FaCalendar, FaChevronDown, FaEnvelope, FaFacebook, FaInstagram, FaPhoneAlt, FaTwitter } from 'react-icons/fa'
 import { FaLocationPin } from 'react-icons/fa6'
 
 export default function Sidebar() {
+  const [active, setActive] = useState(false);
   return (
-    <aside className="sidebar" data-sidebar>
+    <aside className={`sidebar ${active? "active": ""}`}>
 
     <div className="sidebar-info">
 
@@ -20,7 +22,7 @@ export default function Sidebar() {
         <p className="title">{data.tagline}</p>
       </div>
 
-      <button className="info_more-btn" data-sidebar-btn>
+      <button className={`info_more-btn`} onClick={()=> setActive(prev => !prev)}>
         <span>Show Contacts</span>
 
         <FaChevronDown />
@@ -28,7 +30,7 @@ export default function Sidebar() {
 
     </div>
 
-    <div className="sidebar-info_more">
+    <div className={`sidebar-info_more ${active && "active"}`}>
 
       <div className="separator"></div>
 
