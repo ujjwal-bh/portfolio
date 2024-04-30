@@ -25,7 +25,7 @@ export default function Projects() {
             return (
               <li
                 className="project-item  active"
-                data-filter-item
+                key={index}
               >
                 <Link href={`/projects/${id}`}>
                   <figure className="project-img">

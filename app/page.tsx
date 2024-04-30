@@ -18,7 +18,7 @@ export default function Home() {
       </section>
 
       <section className="service">
-        <h3 className="h3 service-title">What i'm doing</h3>
+        <h3 className="h3 service-title">What i&#39;m doing</h3>
 
         <div className="service-list">
           {data.services.map((item, index)=> {
