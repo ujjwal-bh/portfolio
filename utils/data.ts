@@ -11,7 +11,7 @@ export const data = {
   profile: "/img/my-avatar.png",
   tagline: "Web developer",
   description1:
-    "I fell in love with programming and I have at least learnt something, I think.. I am fluent in classics like Javascript and Java Passionate about crafting, cutting-edge web technologies and products. ",
+    "I fell in love with programming and I have at least learnt something, I think.. I am fluent in classics like Javascript and Java. I am Passionate about crafting, cutting-edge web technologies and products.",
   description2: "I thrive on transforming innovative ideas into tangible digital solutions. Constantly exploring the latest trends, I aim to push the boundaries of web development to create engaging and impactful user experiences. Whenever possible, I also apply my passion for developing products with Node.js and Modern Javascript Library and Frameworks  like React.js and Next.js ",
     email: "ujjwalbh001@gmail.com",
   phone: "+91-8105822779",

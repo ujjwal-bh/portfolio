@@ -13,12 +13,8 @@ export default function Projects() {
         <ul className="project-list">
           {data.projects.map((item, index) => {
             const {
-              description,
-              githubLink,
-              liveLink,
               img,
               shortName,
-              stack,
               tagline,
               id
             } = item;
