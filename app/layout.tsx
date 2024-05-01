@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "UJJWAL BHATTARAI",
-  description: "",
+  description: "Hi Everyone, Welcome to my portfolio. Explore creative designs, captivating  web solutions. Get to know and connect with me. Browse the portfolio now.",
+
 };
 
 export default function RootLayout({
@@ -18,11 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/img/my-avatar.png" type="image/png" sizes="16*16" />
+      </head>
       <body className={inter.className}>
         <main>
-          <Sidebar/>
+          <Sidebar />
           <div className="main-content">
-            <Navbar/>
+            <Navbar />
             {children}
           </div>
         </main>

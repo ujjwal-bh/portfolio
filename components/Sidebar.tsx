@@ -23,8 +23,8 @@ export default function Sidebar() {
           <Image
             src="/img/my-avatar.png"
             alt="Richard hanrick"
-            width={80}
-            height={100}
+            width={200}
+            height={200}
           />
         </figure>
 
