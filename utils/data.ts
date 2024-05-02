@@ -127,11 +127,10 @@ export const data = {
         "Built a website for a construction company to showcase themselves and their features using javascript  (Vanilla JS and Nodejs) as per their requirement and deployed it.",
       stack: [
         "Javascript",
-        "ReactJs",
         "NodeJS",
         "ExpressJS",
-        "mongodb",
-        "websocket",
+        "HTML",
+        "CSS",
       ],
       liveLink: "https://sneonconstruction.com/",
       githubLink: "",
