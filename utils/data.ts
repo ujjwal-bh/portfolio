@@ -124,7 +124,7 @@ export const data = {
       img:"/img/sneonconstruction.png",
       tagline: "Web Development",
       description:
-        "Built a complete restaurant management system including all the required facilities like order taking for waiters, billing, Employee management. Worked on both frontend and backend of the project.",
+        "Built a website for a construction company to showcase themselves and their features using javascript  (Vanilla JS and Nodejs) as per their requirement and deployed it.",
       stack: [
         "Javascript",
         "ReactJs",
