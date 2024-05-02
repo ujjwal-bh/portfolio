@@ -332,7 +332,6 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
-  overflow: hidden;
 }
 .avatar-box img {
   width: 105px;
@@ -512,6 +511,65 @@ main {
 
 .about-text p {
   margin-bottom: 15px;
+}
+
+/* SERVICE */
+
+.service {
+  margin-bottom: 35px;
+}
+
+.service-title {
+  margin-bottom: 20px;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.service-item {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+}
+
+.service-item::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.service-icon-box {
+  margin-bottom: 10px;
+  font-size: var(--fs-1);
+  color: var(--orange-yellow-crayola);
+}
+
+.service-icon-box img {
+  margin: auto;
+}
+
+.service-content-box {
+  text-align: center;
+}
+
+.service-item-title {
+  margin-bottom: 7px;
+}
+
+.service-item-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-3);
+  line-height: 1.6;
 }
 
 /* RESUME */
@@ -1159,7 +1217,25 @@ textarea.form-input::-webkit-resizer {
     margin-bottom: 40px;
   }
 
- 
+  /* SERVICE */
+
+  .service-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 30px;
+  }
+
+  .service-icon-box {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .service-content-box {
+    text-align: left;
+  }
+
   /* RESUME */
   .timeline-list {
     margin-left: 65px;
@@ -1344,7 +1420,12 @@ textarea.form-input::-webkit-resizer {
     font-weight: var(--fw-500);
   }
 
+  /* SERVICE */
 
+  .service-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 25px;
+  }
 
   /* project */
 
