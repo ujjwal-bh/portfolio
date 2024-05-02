@@ -5,10 +5,10 @@ import { data } from "@/utils/data";
 
 export default function Contact() {
   return (
-    <article className="contact" data-page="contact">
+    <article className="contact">
       <SectionTitle>Contact</SectionTitle>
 
-      <section className="mapbox" data-mapbox>
+      <section className="mapbox">
         <figure>
           <iframe
             src={data.map}
@@ -21,7 +21,7 @@ export default function Contact() {
 
       <section className="contact-form">
         <h3 className="h3 form-title">Contact Form</h3>
-        <form action="#" className="form" data-form>
+        <form action="#" className="form">
           <div className="input-wrapper">
             <input
               type="text"

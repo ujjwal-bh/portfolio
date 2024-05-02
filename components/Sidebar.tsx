@@ -7,10 +7,7 @@ import {
   FaChevronDown,
   FaChevronUp,
   FaEnvelope,
-  FaFacebook,
-  FaInstagram,
   FaPhoneAlt,
-  FaTwitter,
 } from "react-icons/fa";
 import { FaLocationPin } from "react-icons/fa6";
 
@@ -21,15 +18,15 @@ export default function Sidebar() {
       <div className="sidebar-info">
         <figure className="avatar-box">
           <Image
-            src="/img/my-avatar.png"
-            alt="Richard hanrick"
+            src="/img/profile.png"
+            alt={data.name}
             width={200}
             height={200}
           />
         </figure>
 
         <div className="info-content">
-          <h1 className="name" title="Richard hanrick">
+          <h1 className="name" title={data.name}>
             {data.name}
           </h1>
 

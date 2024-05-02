@@ -12,19 +12,19 @@ export default function Navbar() {
         <li className="navbar-item">
           <Link href="/">
             <button className={`navbar-link  ${path === "/" ? "active" : ""}`}>
-              About
+              Home
             </button>
           </Link>
         </li>
 
         <li className="navbar-item">
-          <Link href="/resume">
+          <Link href="/about">
             <button
               className={`navbar-link  ${
-                path.includes("/resume") ? "active" : ""
+                path.includes("/about") ? "active" : ""
               }`}
             >
-              Resume
+              About me
             </button>
           </Link>
         </li>
@@ -37,6 +37,17 @@ export default function Navbar() {
               }`}
             >
               Projects
+            </button>
+          </Link>
+        </li>
+        <li className="navbar-item">
+          <Link href="/blog">
+            <button
+              className={`navbar-link  ${
+                path.includes("/blog") ? "active" : ""
+              }`}
+            >
+              Blog
             </button>
           </Link>
         </li>

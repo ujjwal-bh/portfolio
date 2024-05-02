@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <article className="project" data-page="project">
+    <article className="project">
       <SectionTitle>Projects</SectionTitle>
 
       <section className="projects">

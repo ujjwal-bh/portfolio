@@ -113,30 +113,12 @@ export const data = {
         "Implemented a full stack web app to allow users to share their gaming highlight clips using Angular as a frontend framework and Firebase as a backend. Used webassembly and ffmpeg package to make video upload feature more effective. Used tailwind css for UI styling.",
       stack: ["Tailwindcss", "Angular", "Firebase", "webassembly", "ffmpeg"],
       liveLink:
-        "https://clips-angular-il0upnn0m-ujjwal-bhattarais-projects.vercel.app/",
+        "https://clips-angular-sand-two.vercel.app/",
       githubLink: "https://github.com/ujjwal-bh/clips-fullstack",
     },
+   
     {
-      id:2,
-      name: "RMS - Internal Restaurant Management System",
-      shortName: "RMS",
-      img: "/img/rms.png",
-      tagline: "Web Development",
-      description:
-        "Built a complete restaurant management system including all the required facilities like order taking for waiters, billing, Employee management. Worked on both frontend and backend of the project.",
-      stack: [
-        "Javascript",
-        "ReactJs",
-        "NodeJS",
-        "ExpressJS",
-        "mongodb",
-        "websocket",
-      ],
-      liveLink: "https://restaurant.the-binaries.xyz/login",
-      githubLink: "",
-    },
-    {
-      id: 3,
+      id: 2,
       name: "SNeonConstructions- Website for a Construction company",
       shortName: "SNeonConstructions",
       img:"/img/sneonconstruction.png",
@@ -155,7 +137,7 @@ export const data = {
       githubLink: "",
     },
     {
-      id: 4,
+      id: 3,
       shortName: "Pickup",
       name: "Pickup - Ride booking application",
       img: "/img/pickup.png",
@@ -167,6 +149,25 @@ export const data = {
         "UI/UX"
       ],
       liveLink: "https://www.figma.com/proto/v4f3Wk9aW3EOg0Ub9aUsOr/book-it?node-id=5-697&starting-point-node-id=5%3A697",
+      githubLink: "",
+    },
+    {
+      id:4,
+      name: "RMS - Internal Restaurant Management System",
+      shortName: "RMS",
+      img: "/img/rms.png",
+      tagline: "Web Development",
+      description:
+        "Built a complete restaurant management system including all the required facilities like order taking for waiters, billing, Employee management. Worked on both frontend and backend of the project.",
+      stack: [
+        "Javascript",
+        "ReactJs",
+        "NodeJS",
+        "ExpressJS",
+        "mongodb",
+        "websocket",
+      ],
+      liveLink: "https://restaurant.the-binaries.xyz/login",
       githubLink: "",
     },
   ],

@@ -4,8 +4,8 @@ import { data } from "@/utils/data";
 
 export default function Home() {
   return (
-    <article className="about" data-page="about">
-      <SectionTitle>About</SectionTitle>
+    <article className="about">
+      <SectionTitle>Hello Everyone</SectionTitle>
 
       <section className="about-text">
         <p>

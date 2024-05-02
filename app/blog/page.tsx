@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Blog() {
   return (
-    // <article className="blog" data-page="blog">
+    // <article className="blog">
     //   <SectionTitle>Blog</SectionTitle>
 
     //   <section className="blog-posts">
