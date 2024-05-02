@@ -1,12 +1,12 @@
 import SectionTitle from "@/components/SectionTitle";
 import { data } from "@/utils/data";
 import React from "react";
-import { FaBook, FaChevronRight, FaCircle, FaDotCircle, FaList } from "react-icons/fa";
+import { FaBook, FaDotCircle } from "react-icons/fa";
 
 export default function page() {
   return (
     <article className="resume">
-      <SectionTitle>Resume</SectionTitle>
+      <SectionTitle>About Me</SectionTitle>
 
       <section className="timeline">
         <div className="title-wrapper">
