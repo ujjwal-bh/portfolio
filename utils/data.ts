@@ -71,7 +71,6 @@ export const data = {
       desc: [
         "Worked on multiple client applications developing their frontend and UI",
         "Used SQL to query and analyze datasets for business reporting and visualization.",
-        "Managed projects and its documentation with Jira and Confluence.",
         "Created interactive dashboards in PowerBI for data visualization.",
       ],
     },
