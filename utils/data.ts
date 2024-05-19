@@ -67,7 +67,7 @@ export const data = {
       role: "SWE Intern",
       startDate: "Jan, 2024",
       endDate: "July, 2024",
-      techStack: ["SQL", "Jira", "Confluence", "PowerBI"],
+      techStack: ["SQL", "Angular","jQuery", "Javascript", "Jira", "PowerBI"],
       desc: [
         "Worked on multiple client applications developing their frontend and UI",
         "Used SQL to query and analyze datasets for business reporting and visualization.",
