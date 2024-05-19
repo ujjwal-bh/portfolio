@@ -433,6 +433,7 @@ main {
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
   font-size: var(--fs-7);
+  word-wrap: break-word;
 }
 
 .contact-info address {
@@ -953,13 +954,16 @@ main {
 
 .mapbox {
   position: relative;
-  height: 250px;
+  /* height: 250px; */
+  height: 100%;
+  padding: 1rem;
   width: 100%;
   border-radius: 16px;
   margin-bottom: 30px;
   border: 1px solid var(--jet);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+
 
 .mapbox figure {
   height: 100%;
@@ -1077,6 +1081,21 @@ textarea.form-input::-webkit-resizer {
   color: var(--light-gray);
   margin-bottom: 0.5rem;
 }
+
+
+.flex-list{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.flex-list .flex-item{
+  width:  100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(65, 65, 65);
+  min-width: unset;
+}
+
 /* RESPONSIVE */
 @media (min-width: 450px) {
   /* CLIENT */
@@ -1192,6 +1211,12 @@ textarea.form-input::-webkit-resizer {
     max-width: calc(100% - 64px);
     width: calc(100% - 64px);
   }
+  .flex-list{
+    flex-direction: row;
+  }
+  .flex-list .flex-item{
+    width:  50%;
+  }
 
   /* NAVBAR */
 
@@ -1272,7 +1297,6 @@ textarea.form-input::-webkit-resizer {
   /* CONTACT */
 
   .mapbox {
-    height: 380px;
     border-radius: 18px;
   }
 
@@ -1536,6 +1560,7 @@ textarea.form-input::-webkit-resizer {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    word-wrap: break-word;
   }
 
   .contact-info :is(.contact-link, time, address) {

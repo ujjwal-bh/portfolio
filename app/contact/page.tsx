@@ -1,7 +1,8 @@
 import SectionTitle from "@/components/SectionTitle";
 import React from "react";
-import { FaPaperPlane } from "react-icons/fa";
+import { FaEnvelope, FaPaperPlane, FaPhoneAlt } from "react-icons/fa";
 import { data } from "@/utils/data";
+import { FaLocationPin } from "react-icons/fa6";
 
 export default function Contact() {
   return (
@@ -9,14 +10,35 @@ export default function Contact() {
       <SectionTitle>Contact</SectionTitle>
 
       <section className="mapbox">
-        <figure>
-          <iframe
-            src={data.map}
-            width="400"
-            height="300"
-            loading="lazy"
-          ></iframe>
-        </figure>
+      <ul className="contacts-list flex-list">
+          <li className="contact-item flex-item">
+            <div className="icon-box">
+              <FaEnvelope />
+            </div>
+
+            <div className="contact-info">
+              <p className="contact-title">Email</p>
+
+              <a href={`mailto:${data.email}`} className="contact-link">
+                {data.email}
+              </a>
+            </div>
+          </li>
+
+          <li className="contact-item flex-item">
+            <div className="icon-box">
+              <FaPhoneAlt />
+            </div>
+
+            <div className="contact-info">
+              <p className="contact-title">Phone</p>
+
+              <a href={`tel:${data.phone}`} className="contact-link">
+                {data.phone}
+              </a>
+            </div>
+          </li>
+        </ul>
       </section>
 
       <section className="contact-form">

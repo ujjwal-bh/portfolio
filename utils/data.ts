@@ -69,10 +69,10 @@ export const data = {
       endDate: "July, 2024",
       techStack: ["SQL", "Jira", "Confluence", "PowerBI"],
       desc: [
+        "Worked on multiple client applications developing their frontend and UI",
         "Used SQL to query and analyze datasets for business reporting and visualization.",
         "Managed projects and its documentation with Jira and Confluence.",
         "Created interactive dashboards in PowerBI for data visualization.",
-        "Improved data workflows by optimizing SQL queries.",
       ],
     },
     {
@@ -94,6 +94,7 @@ export const data = {
     "Javascript",
     "Java",
     "ReactJS",
+    "Angular",
     "NextJS",
     "NodeJS",
     "NestJS",
