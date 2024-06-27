@@ -10,14 +10,16 @@ export const data = {
   name: "Ujjwal Bhattarai",
   profile: "/img/my-avatar.png",
   tagline: "Web developer",
-  description1:
-    "I fell in love with programming and I have at least learnt something, I think.. I am fluent in classics like Javascript and Java. I am Passionate about crafting, cutting-edge web technologies and products.",
-  description2: "I thrive on transforming innovative ideas into tangible digital solutions. Constantly exploring the latest trends, I aim to push the boundaries of web development to create engaging and impactful user experiences. Whenever possible, I also apply my passion for developing products with Node.js and Modern Javascript Library and Frameworks  like React.js and Next.js ",
-    email: "ujjwalbh001@gmail.com",
-  phone: "+91-8105822779",
+  description:[
+    "I am dedicated to translating innovative concepts into sophisticated digital solutions. Fluent in foundational languages like Java, Javascript and Typescript, I continually explore and integrate cutting-edge web technologies and frameworks. My expertise spans across Node.js for backend development and modern JavaScript libraries such as React.js and Next.js for frontend solutions.",
+    "I love crafting compelling user experiences that resonate with audiences and drive engagement. By leveraging my skills in Figma for design and Tailwind CSS for responsive styling, I ensure intuitive and visually captivating interfaces. I am committed to staying ahead of industry trends and best practices, enabling me to deliver impactful products that meet diverse client needs.",
+      ],
+    
+    email: "bhattaraiujjwal26@gmail.com",
+  phone: "+977-9863452920",
   birthdate: "2001/09/07",
-  location: "Bangalore, India",
-  map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.224542353479!2d77.71380920991693!3d12.957478715136459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1306cd2cd527%3A0x822d084f0e13ba42!2sBNR%20Luxury%20HOMES%20(co-living)!5e0!3m2!1sen!2sin!4v1714492683842!5m2!1sen!2sin",
+  location: "Kathmandu, Nepal",
+  map: "",
   socialMedia: [
     {
       Icon: FaLinkedin,
@@ -35,9 +37,15 @@ export const data = {
   services: [
     {
       Icon: FaDesktop,
-      title: "Web Development",
+      title: "Frontend Development",
       description:
-        "Developing high quality web applications both frontend and backend",
+        "developing high-quality frontend ensuring dynamic, responsive, and visually appealing interfaces.",
+    },
+    {
+      Icon: FaDesktop,
+      title: "Backend Development",
+      description:
+        "developing high-quality backend applications ensuring robust, scalable, and efficient solutions including API development, security, etc.",
     },
     {
       Icon: FaPaintBrush,
@@ -66,12 +74,12 @@ export const data = {
       company: "BNP Paribas Bank",
       role: "SWE Intern",
       startDate: "Jan, 2024",
-      endDate: "July, 2024",
-      techStack: ["SQL", "Angular","jQuery", "Javascript", "Jira", "PowerBI"],
+      endDate: "Jun, 2024",
+      techStack: ["Angular", "Spring Boot", "jQuery", "Javascript", "Jira", "PowerBI", "SQL"],
       desc: [
-        "Worked on multiple client applications developing their frontend and UI",
-        "Used SQL to query and analyze datasets for business reporting and visualization.",
-        "Created interactive dashboards in PowerBI for data visualization.",
+        "Developed highly functional backend and frontend for client applications based on requirements.",
+        " Collaborated with team members on agile projects, achieving a sprint completion rate of 100%.",
+        "Enhanced user interface responsiveness, resulting in a 20% improvement in user satisfaction scores.",
       ],
     },
     {
@@ -79,27 +87,30 @@ export const data = {
       role: "Project Intern",
       startDate: "Feb, 2024",
       endDate: "Aug, 2024",
-      techStack: ["HTML", "CSS", "JS", "ReactJS", "NodeJS", "Figma"],
+      techStack: [ "React", "Mongodb", "Node.js", "Express.js", "Figma"],
       desc: [
-        "Worked with mentors and fellow interns to build a dashboard to manage travel bookings for travel companies.",
-        "Learned and worked hands-on with different programming languages and frameworks.",
-        "Developed frontend of the application, API Integration and also UI design.",
+        "Designed and developed multiple modules of a travel booking management dashboard automating booking processing  and travel vehicle scheduling.",
+        "Created and implemented robust authentication, services and api endpoints.",
+        "Developed backend modules, frontend of the application, API Integration and also UI design.",
       ],
     },
   ],
   skills: [
-    "HTML",
-    "CSS",
     "Javascript",
+    "Typescript",
     "Java",
-    "ReactJS",
+    "React",
     "Angular",
-    "NextJS",
-    "NodeJS",
+    "Next.js",
+    "Node.js",
+    "Express.js",
     "NestJS",
     "Mongodb",
     "SQL",
     "Figma",
+    "Jira",
+    "Git",
+    "Github"
   ],
   projects: [
     {
@@ -110,7 +121,7 @@ export const data = {
       
       tagline: "Web Development",
       description:
-        "Implemented a full stack web app to allow users to share their gaming highlight clips using Angular as a frontend framework and Firebase as a backend. Used webassembly and ffmpeg package to make video upload feature more effective. Used tailwind css for UI styling.",
+        " Implemented a fully authenticated full stack web app to allow users to share their gaming highlight clips using Angular as a frontend framework and Firebase as a backend, used webassembly and ffmpeg package to make video upload feature more effective and  tailwind css for UI styling.",
       stack: ["Tailwindcss", "Angular", "Firebase", "webassembly", "ffmpeg"],
       liveLink:
         "https://clips-angular-sand-two.vercel.app/",
@@ -127,8 +138,8 @@ export const data = {
         "Built a website for a construction company to showcase themselves and their features using javascript  (Vanilla JS and Nodejs) as per their requirement and deployed it.",
       stack: [
         "Javascript",
-        "NodeJS",
-        "ExpressJS",
+        "Node.js",
+        "Express.js",
         "HTML",
         "CSS",
       ],
@@ -166,8 +177,66 @@ export const data = {
         "mongodb",
         "websocket",
       ],
-      liveLink: "https://restaurant.the-binaries.xyz/login",
+      liveLink: "https://restaurant.the-binaries.xyz",
       githubLink: "",
+    },
+    {
+      id:5,
+      name: "Amazon Product Scrapper",
+      shortName: "Amazon Scrapper",
+      img: "/img/scrapper.png",
+      tagline: "Web Development",
+      description:
+        "Developed a full-stack application to scrape and display product information from e-commerce websites. The frontend uses React with TypeScript and CSS, along with RTK Query for data fetching and caching. The backend is built with NestJS, Prisma ORM, MySQL, and Puppeteer for web scraping. Users can input a product URL, view product details, and search or filter through the data. Outdated data is automatically refreshed asynchronously. This project highlights my skills in both front-end and back-end development, demonstrating technical proficiency and problem-solving abilities.",
+      stack: [
+        "HTML",
+        "CSS",
+        "Typescript",
+        "React",
+        "Node.js",
+        "NestJS",
+        "Prisma",
+        "Mysql",
+        "Puppeteer"
+      ],
+      // liveLink: "https://www.ujjwal-bhattarai.com.np",
+      githubLink: "https://github.com/ujjwal-bh/amazon-product-scrapper",
+    },
+    {
+      id:6,
+      name: "Real-time document editing and sharing platform",
+      shortName: "Synchrodocs",
+      img: "/img/document.png",
+      tagline: "Web Development",
+      description:
+        "fullstack application for a collaborative online document editor. The frontend is built with React and uses Quill for rich text editing. backend is built on NestJS. Its features include Real-time collaborative editing, Rich text formatting with Quill, User authentication and authorization, Document sharing",
+      stack: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "Node.js",
+        "NestJS"
+      ],
+      githubLink: "https://github.com/ujjwal-bh/synchrodocs-ui",
+    },
+    {
+      id:7,
+      name: "Personal Portfolio site ",
+      shortName: "Portfolio",
+      img: "/img/portfolio.png",
+      tagline: "Web Development",
+      description:
+        "Developed a responsive and interactive portfolio website using Next.js to showcase my skills, projects, experience, and contact information. The site features a skills showcase, detailed project descriptions with visuals, a chronologically organized experience timeline, and an integrated contact form for direct communication. This portfolio provides a professional and comprehensive online presence, enhancing visibility and networking opportunities.",
+      stack: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "Next.js",
+      ],
+      liveLink: "https://www.ujjwal-bhattarai.com.np",
+      githubLink: "https://github.com/ujjwal-bh/portfolio",
     },
   ],
 };

@@ -79,19 +79,7 @@ export default function page() {
         </ol>
       </section>
 
-      <section className="skill">
-        <h3 className="h3 skills-title">My skills</h3>
-
-        <ul className="tags-list">
-          {data.skills.map((item, index) => {
-            return (
-              <li className="tags-item" key={index}>
-                #{item}
-              </li>
-            );
-          })}
-        </ul>
-      </section>
+    
     </article>
   );
 }

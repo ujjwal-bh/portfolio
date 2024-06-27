@@ -645,6 +645,9 @@ main {
 }
 
 /* SKILLS */
+.skill{
+  margin-bottom: 2rem;
+}
 .skills-title {
   margin-bottom: 20px;
 }
