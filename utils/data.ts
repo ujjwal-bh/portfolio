@@ -114,6 +114,21 @@ export const data = {
   ],
   projects: [
     {
+      id: 0,
+      name: "phonecase.com - Your Image on a Custom Phone Case",
+      shortName: "phonecase.com",
+      img:"/img/phonecase-2.png",
+      
+      tagline: "Web Development",
+      description:
+        " Implemented a fully authenticated full stack ecommerce web app to allow users to order a customized phone cases for their iphones based on the image they provide using Next.js including the admin dashboard to view and update orders. It uses postgresql for storing data, Resend as a email provider, uploadthing to store images on cloud and tailwind css for UI styling.",
+      stack: ["Next.js", "Tailwindcss", "Kinde", "uploadthing", "postgresql", "tanstack-react-query", "RPC", "Server actions"],
+      liveLink:
+        "https://phonecase-com-crbw.vercel.app/",
+      githubLink: "https://github.com/ujjwal-bh/phonecase.com",
+    },
+   
+    {
       id: 1,
       name: "Clipz - Game highlight clips sharing platform",
       shortName: "Clipz",
