@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <link rel="icon" href="/img/my-avatar.png" type="image/png" sizes="16*16" />
       </head>
       <body className={inter.className}>
+        <Toaster/>
         <main>
           <Sidebar />
           <div className="main-content">

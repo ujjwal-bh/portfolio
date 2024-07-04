@@ -1,10 +1,32 @@
+"use client"
 import SectionTitle from "@/components/SectionTitle";
-import React from "react";
+import React, { SyntheticEvent, useState } from "react";
 import { FaEnvelope, FaPaperPlane, FaPhoneAlt } from "react-icons/fa";
 import { data } from "@/utils/data";
-import { FaLocationPin } from "react-icons/fa6";
+import axios from "axios";
+import toast from "react-hot-toast";
 
+const INIT = {
+  name: "",
+  email: "",
+  message: ""
+}
 export default function Contact() {
+  const [formData, setFormData] = useState(INIT)
+
+  const handleContact = async (e: SyntheticEvent) => {
+    e.preventDefault();
+    try{
+
+      const response = await axios.post("/api/contact", JSON.stringify(formData))
+      console.log(response, "ress")
+      toast.success("Message sent successfully");
+      setFormData(INIT)
+    } catch(error) {
+      toast.error("Something went wrong")
+    }
+
+  }
   return (
     <article className="contact">
       <SectionTitle>Contact</SectionTitle>
@@ -42,8 +64,8 @@ export default function Contact() {
       </section>
 
       <section className="contact-form">
-        <h3 className="h3 form-title">Contact Form</h3>
-        <form action="#" className="form">
+        <h3 className="h3 form-title">Let's Chat</h3>
+        <form className="form" onSubmit={handleContact}>
           <div className="input-wrapper">
             <input
               type="text"
@@ -51,6 +73,8 @@ export default function Contact() {
               className="form-input"
               placeholder="Full name"
               required
+              value={formData.name}
+              onChange={(e)=> setFormData({...formData, name: e.target.value})}
             />
 
             <input
@@ -59,6 +83,8 @@ export default function Contact() {
               className="form-input"
               placeholder="Email address"
               required
+              value={formData.email}
+              onChange={(e)=> setFormData({...formData, email: e.target.value})}
             />
           </div>
 
@@ -66,6 +92,8 @@ export default function Contact() {
             name="message"
             className="form-input"
             placeholder="Your Message"
+            value={formData.message}
+            onChange={(e)=> setFormData({...formData, message: e.target.value})}
           ></textarea>
 
           <button className="form-btn" type="submit">
