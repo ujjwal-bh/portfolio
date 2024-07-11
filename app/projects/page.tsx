@@ -3,16 +3,16 @@ import SectionTitle from "@/components/SectionTitle";
 import { data } from "@/utils/data";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 export default function Projects() {
   const [projects, setProjects] = useState(data.projects.result|| [])
   const [activeActegory, setActiveCategory] = useState("all");
 
-  const filterBasedOnCategory = () => {
+  const filterBasedOnCategory = useCallback(() => {
     const filtered = data.projects.result.filter((project) => project.category.includes(activeActegory) || activeActegory ==="all")
     return filtered;
-  }
+  },[activeActegory])
 
 
   useEffect(()=> {
@@ -40,6 +40,7 @@ export default function Projects() {
               tagline,
               id
             } = item;
+            console.log(item, "item")
             return (
               <li
                 className="project-item  active"
