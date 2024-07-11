@@ -17,14 +17,14 @@ export default function Projects() {
 
   useEffect(()=> {
     setProjects(filterBasedOnCategory())
-  },[activeActegory])
+  },[activeActegory, filterBasedOnCategory])
 
   return (
     <article className="project">
       <SectionTitle>Projects</SectionTitle>
 
       <section className="projects">
-        <div className="project-category">
+        <div className="projects-category">
           {
             data.projects.category.map((item)=> (
               <div key={item} onClick={()=> setActiveCategory(item)} className={item === activeActegory ? "category-item active-category" : "category-item"}>{item}</div>

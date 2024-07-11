@@ -19,8 +19,8 @@ export default function Home() {
         <ul className="tags-list">
           {data.skills.map((item, index) => {
             return (
-              <li className="tags-item" key={index}>
-                #{item}
+              <li className="tags-item skill-item" key={index}>
+                  {item}
               </li>
             );
           })}

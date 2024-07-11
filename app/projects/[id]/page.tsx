@@ -9,7 +9,7 @@ import { FaChevronLeft } from "react-icons/fa";
 export default function SingleProject() {
   const { id } = useParams();
   const router = useRouter();
-  let item = data.projects.filter((item) => item.id == Number(id));
+  let item = data.projects.result.filter((item) => item.id == Number(id));
   return (
     <article className="project">
       <SectionTitle>Projects</SectionTitle>
