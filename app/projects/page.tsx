@@ -1,17 +1,39 @@
+"use client"
 import SectionTitle from "@/components/SectionTitle";
 import { data } from "@/utils/data";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Projects() {
+  const [projects, setProjects] = useState(data.projects.result|| [])
+  const [activeActegory, setActiveCategory] = useState("all");
+
+  const filterBasedOnCategory = () => {
+    const filtered = data.projects.result.filter((project) => project.category.includes(activeActegory) || activeActegory ==="all")
+    return filtered;
+  }
+
+
+  useEffect(()=> {
+    setProjects(filterBasedOnCategory())
+  },[activeActegory])
+
   return (
     <article className="project">
       <SectionTitle>Projects</SectionTitle>
 
       <section className="projects">
+        <div className="project-category">
+          {
+            data.projects.category.map((item)=> (
+              <div key={item} onClick={()=> setActiveCategory(item)} className={item === activeActegory ? "category-item active-category" : "category-item"}>{item}</div>
+            ))
+          }
+
+        </div>
         <ul className="project-list">
-          {data.projects.map((item, index) => {
+          {projects.map((item, index) => {
             const {
               img,
               shortName,

@@ -120,13 +120,17 @@ export const data = {
     "Git",
     "Github",
   ],
-  projects: [
+  projects: {
+    category: ["all","React", "Next.js","MERN","Angular", "NestJS", "Express.js", "Firebase", "Vanilla"],
+    result: [
+
     {
       id: 0,
       name: "LMS - Redifining Learning",
       shortName: "LMS",
       img: "/img/lms.png",
       tagline: "Fullstack-Next.js",
+      category: ["Next.js", "React"],
       description:
         " Implemented a fully authenticated full stack learning management application to allow users to buy and watch courses, track their progress, allows permitted users to create and sell courses.",
       stack: [
@@ -147,7 +151,7 @@ export const data = {
       name: "phonecase.com - Your Image on a Custom Phone Case",
       shortName: "phonecase.com",
       img: "/img/phonecase-2.png",
-
+      category: ["Next.js", "React"],
       tagline: "Fullstack-Next.js",
       description:
         " Implemented a fully authenticated full stack ecommerce web app to allow users to order a customized phone cases for their iphones based on the image they provide using Next.js including the admin dashboard to view and update orders. It uses postgresql for storing data, Resend as a email provider, uploadthing to store images on cloud and tailwind css for UI styling.",
@@ -170,6 +174,7 @@ export const data = {
       name: "Clipz - Game highlight clips sharing platform",
       shortName: "Clipz",
       img: "/img/clipz.png",
+      category: ["Angular", "Firebase"],
 
       tagline: "Fullstack-Angular-Firebase",
       description:
@@ -185,6 +190,8 @@ export const data = {
       shortName: "SNeonConstructions",
       img: "/img/sneonconstruction.png",
       tagline: "Fullstack-Vanilla-Express.js",
+      category: ["Vanilla", "Express.js"],
+
       description:
         "Built a website for a construction company to showcase themselves and their features using javascript  (Vanilla JS and Nodejs) as per their requirement and deployed it.",
       stack: ["Javascript", "Node.js", "Express.js", "HTML", "CSS"],
@@ -197,6 +204,8 @@ export const data = {
       name: "Pickup - Ride booking application",
       img: "/img/pickup.png",
       tagline: "Design-Figma",
+      category: ["Design", "Figma"],
+
       description:
         "built a user friendly and excellent looking UI/UX for a ride booking application using figma.",
       stack: ["Figma", "UI/UX"],
@@ -210,6 +219,8 @@ export const data = {
       shortName: "RMS",
       img: "/img/rms.png",
       tagline: "Fullstack-MERN",
+      category: ["MERN", "React", "Express.js"],
+
       description:
         "Built a complete restaurant management system including all the required facilities like order taking for waiters, billing, Employee management. Worked on both frontend and backend of the project.",
       stack: [
@@ -228,6 +239,8 @@ export const data = {
       name: "Amazon Product Scrapper",
       shortName: "Amazon Scrapper",
       img: "/img/scrapper.png",
+      category: ["NestJS", "React"],
+
       tagline: "Fullstack-React-NestJS",
       description:
         "Developed a full-stack application to scrape and display product information from e-commerce websites. The frontend uses React with TypeScript and CSS, along with RTK Query for data fetching and caching. The backend is built with NestJS, Prisma ORM, MySQL, and Puppeteer for web scraping. Users can input a product URL, view product details, and search or filter through the data. Outdated data is automatically refreshed asynchronously. This project highlights my skills in both front-end and back-end development, demonstrating technical proficiency and problem-solving abilities.",
@@ -251,6 +264,7 @@ export const data = {
       shortName: "Synchrodocs",
       img: "/img/document.png",
       tagline: "Fullstack-MERN",
+      category: ["MERN", "React", "Express.js"],
       description:
         "fullstack application for a collaborative online document editor. The frontend is built with React and uses Quill for rich text editing. backend is built on NestJS. Its features include Real-time collaborative editing, Rich text formatting with Quill, User authentication and authorization, Document sharing",
       stack: ["HTML", "CSS", "Javascript", "React", "Node.js", "NestJS"],
@@ -262,6 +276,7 @@ export const data = {
       shortName: "Portfolio",
       img: "/img/portfolio.png",
       tagline: "Fullstack-Next.js",
+      category: ["Next.js", "React"],
       description:
         "Developed a responsive and interactive portfolio website using Next.js to showcase my skills, projects, experience, and contact information. The site features a skills showcase, detailed project descriptions with visuals, a chronologically organized experience timeline, and an integrated contact form for direct communication. This portfolio provides a professional and comprehensive online presence, enhancing visibility and networking opportunities.",
       stack: ["HTML", "CSS", "Javascript", "React", "Next.js"],
@@ -269,4 +284,7 @@ export const data = {
       githubLink: "https://github.com/ujjwal-bh/portfolio",
     },
   ],
+}
 };
+
+

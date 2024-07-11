@@ -645,7 +645,7 @@ main {
 }
 
 /* SKILLS */
-.skill{
+.skill {
   margin-bottom: 2rem;
 }
 .skills-title {
@@ -687,6 +687,26 @@ main {
 }
 
 /* project */
+
+.project-category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  overflow-x: auto;
+  margin: 1rem;
+  align-items: center;
+}
+.project-category .category-item {
+  padding: 0.5rem;
+  width: fit-content;
+  min-width: 3rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  cursor: pointer;
+}
+.project-category .category-item.active-category {
+  background-color: rgba(128, 128, 128, 0.739);
+}
 .filter-list {
   display: none;
 }
@@ -967,7 +987,6 @@ main {
   /* overflow: hidden; */
 }
 
-
 .mapbox figure {
   height: 100%;
 }
@@ -1085,14 +1104,13 @@ textarea.form-input::-webkit-resizer {
   margin-bottom: 0.5rem;
 }
 
-
-.flex-list{
+.flex-list {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.flex-list .flex-item{
-  width:  100%;
+.flex-list .flex-item {
+  width: 100%;
   padding: 0.5rem;
   border-radius: 0.5rem;
   border: 1px solid rgb(65, 65, 65);
@@ -1214,11 +1232,11 @@ textarea.form-input::-webkit-resizer {
     max-width: calc(100% - 64px);
     width: calc(100% - 64px);
   }
-  .flex-list{
+  .flex-list {
     flex-direction: row;
   }
-  .flex-list .flex-item{
-    width:  50%;
+  .flex-list .flex-item {
+    width: 50%;
   }
 
   /* NAVBAR */
