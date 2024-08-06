@@ -13,17 +13,20 @@ const INIT = {
 }
 export default function Contact() {
   const [formData, setFormData] = useState(INIT)
+  const [loading, setLoading] = useState(false);
 
   const handleContact = async (e: SyntheticEvent) => {
     e.preventDefault();
     try{
-
+      setLoading(true);
       const response = await axios.post("/api/contact", JSON.stringify(formData))
       console.log(response, "ress")
       toast.success("Message sent successfully");
       setFormData(INIT)
     } catch(error) {
       toast.error("Something went wrong")
+    } finally{
+      setLoading(false);
     }
 
   }
@@ -96,9 +99,14 @@ export default function Contact() {
             onChange={(e)=> setFormData({...formData, message: e.target.value})}
           ></textarea>
 
-          <button className="form-btn" type="submit">
+          <button className="form-btn" type="submit" disabled={loading}>
             <FaPaperPlane />
-            <span>Send Message</span>
+
+            <span>{
+              loading ? 
+              "Loading":
+              "Send Message"
+          }</span>
           </button>
         </form>
       </section>

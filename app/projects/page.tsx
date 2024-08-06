@@ -7,17 +7,17 @@ import React, { useCallback, useEffect, useState } from "react";
 
 export default function Projects() {
   const [projects, setProjects] = useState(data.projects.result|| [])
-  const [activeActegory, setActiveCategory] = useState("all");
+  const [activeCategory, setActiveCategory] = useState("all");
 
   const filterBasedOnCategory = useCallback(() => {
-    const filtered = data.projects.result.filter((project) => project.category.includes(activeActegory) || activeActegory ==="all")
+    const filtered = data.projects.result.filter((project) => project.category.includes(activeCategory) || activeCategory ==="all")
     return filtered;
-  },[activeActegory])
+  },[activeCategory])
 
 
   useEffect(()=> {
     setProjects(filterBasedOnCategory())
-  },[activeActegory, filterBasedOnCategory])
+  },[activeCategory, filterBasedOnCategory])
 
   return (
     <article className="project">
@@ -27,7 +27,7 @@ export default function Projects() {
         <div className="projects-category">
           {
             data.projects.category.map((item)=> (
-              <div key={item} onClick={()=> setActiveCategory(item)} className={item === activeActegory ? "category-item active-category" : "category-item"}>{item}</div>
+              <div key={item} onClick={()=> setActiveCategory(item)} className={item === activeCategory ? "category-item active-category" : "category-item"}>{item}</div>
             ))
           }
 
